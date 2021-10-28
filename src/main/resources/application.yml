@@ -1,3 +1,5 @@
 server:
   port: 8999
 logging:  level:    '[com.example.demo]': debug
+    
+management:  endpoints:    web:      exposure:        include:        - '*'
