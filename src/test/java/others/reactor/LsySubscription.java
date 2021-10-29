@@ -30,7 +30,7 @@ public class LsySubscription implements Subscription{
 				//new Runnable()
 				executorService.execute(()->{
 					int count = value.incrementAndGet();
-					if(count > 1000) {
+					if(count > 200) {
 						logger.info("Item is over");
 						subscriber.onComplete();
 					} else {

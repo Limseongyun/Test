@@ -10,7 +10,9 @@ import org.springframework.web.reactive.function.server.ServerResponse;
 public class RouterConfig {
 
 	@Bean
-	public RouterFunction<ServerResponse> routerExam(Handler h){
-		return RouterFunctions.route().GET("/hi", req -> h.test(req)).build();
+	public RouterFunction<ServerResponse> routerExamle(SampleHandler sam){
+		return RouterFunctions.route()
+				.GET("/sample/{id}", sam::test)
+				.build();
 	}
 }
