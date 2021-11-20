@@ -24,7 +24,8 @@ dependencies {
 
 	// https://mvnrepository.com/artifact/org.projectlombok/lombok
 	implementation 'org.projectlombok:lombok:1.18.20'
-	annotationProcessor 'org.projectlombok:lombok' 
+	annotationProcessor 'org.projectlombok:lombok'
+	testAnnotationProcessor 'org.projectlombok:lombok'
 
 	//implementation 'org.springframework.boot:spring-boot-starter-web'/*starter-web, starter-webflux �ΰ��� �߰��ϸ� mvc�� ��*/
 	compileOnly("org.springframework.boot:spring-boot-devtools")
@@ -33,4 +34,12 @@ dependencies {
 
 test {
 	useJUnitPlatform()
+}
+
+compileJava.options.encoding = 'UTF-8'
+
+tasks.withType(JavaCompile){
+
+	options.encoding = 'UTF-8'
+
 }
