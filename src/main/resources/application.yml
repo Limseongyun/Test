@@ -1,5 +1,5 @@
 server:
-  port: 8999
+  port: 5090
 logging:  level:    '[com.example.demo]': debug
 #    
 #spring:#  thymeleaf:#    prefix: classpath:/templates/

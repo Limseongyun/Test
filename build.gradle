@@ -23,9 +23,9 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-webflux'
 
 	// https://mvnrepository.com/artifact/org.projectlombok/lombok
-	compileOnly 'org.projectlombok:lombok:1.18.20'
+	annotationProcessor 'org.projectlombok:lombok:1.18.20'
 
-	//implementation 'org.springframework.boot:spring-boot-starter-web'/*starter-web, starter-webflux µÎ°³´Ù Ãß°¡ÇÏ¸é mvc°¡ µÊ*/
+	//implementation 'org.springframework.boot:spring-boot-starter-web'/*starter-web, starter-webflux ï¿½Î°ï¿½ï¿½ï¿½ ï¿½ß°ï¿½ï¿½Ï¸ï¿½ mvcï¿½ï¿½ ï¿½ï¿½*/
 	compileOnly("org.springframework.boot:spring-boot-devtools")
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
